@@ -7,15 +7,27 @@
     <title>Document</title>
 </head>
 <body>
-
-    <h1>User Selection</h1>
-   <!--  <button onclick="playGame()">Play Game</button> -->
-   <button name="playerButton" value="rock" onclick="playGame('rock')">Rock</button>
-   <button name="playerButton" value="paper" onclick="playGame('paper')">Paper</button>
-   <button name="playerButton" value="scissors" onclick="playGame('scissors')">Scissors</button>
-    <br>
-    <br>
-    <button>restart game</button>
+    <div class="container">
+        <div class="header"></div>
+        <div class="game">
+            <div class="gameZone">
+                <div class="playerGame">
+                    <img src="" alt="">
+                    <div class="playerChoice"></div>
+                </div>
+                <div class="computerGame">
+                    <img src="" alt="">
+                    <div class="computerChoice"></div>
+                </div>
+            </div>
+        </div>
+        <div class="playerChoices">
+            <h1>User Selection</h1>
+            <button name="playerButton" value="rock" onclick="playGame('rock')">Rock</button>
+            <button name="playerButton" value="paper" onclick="playGame('paper')">Paper</button>
+            <button name="playerButton" value="scissors" onclick="playGame('scissors')">Scissors</button>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
