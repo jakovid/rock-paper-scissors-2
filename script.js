@@ -22,23 +22,17 @@ function computerPlay() {
     }
 }
 
-/*  disabled game function
-function playGame() {
-    for (let i = 0; i < 5; i++) {
-        let playerSelection = window.prompt("rock, paper, or scissors?");
-        let computerSelection = computerPlay();
-    if(playerSelection != "rock"
-    && playerSelection != "paper"
-    && playerSelection != "scissors") {
-        alert("Please make sure you typed rock, paper, or scissors correctly.");
-    } else {
-        playRound(playerSelection, computerSelection);
+function playGame(playerInput) {
+    if (playerInput == "rock") {
+        playerSelection = "rock";
+    } else if (playerInput == "paper") {
+        playerSelection = "paper;";
+    } else if (playerInput == "scissors") {
+        playerSelection = "scissors";
     }
-    }
-    console.log(`FINAL SCORE: YOU: ${playerScore} COMPUTER: ${computerScore}`);
-} 
-
-*/
+    computerSelection = computerPlay();
+    playRound(playerSelection, computerSelection);
+}
 
 /* runs a round of the game */
 function playRound(playerSelection, computerSelection) {
