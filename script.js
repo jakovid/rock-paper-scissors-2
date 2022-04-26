@@ -23,7 +23,8 @@ function computerPlay() {
 }
 
 function playGame() {
-    let playerSelection = document.getElementById("playerChoice").value.toLowerCase();
+    for (let i = 0; i < 5; i++) {
+        let playerSelection = window.prompt("rock, paper, or scissors?");
     if(playerSelection != "rock"
     && playerSelection != "paper"
     && playerSelection != "scissors") {
@@ -31,6 +32,8 @@ function playGame() {
     } else {
         playRound(playerSelection, computerSelection);
     }
+    }
+    console.log(`FINAL SCORE: YOU: ${playerScore} COMPUTER: ${computerScore}`);
 }
 
 /* runs a round of the game */
