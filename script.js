@@ -1,6 +1,6 @@
 /* variables */
 let playerSelection;
-let computerSelection = computerPlay();
+let computerSelection;
 let playerScore = 0;
 let computerScore = 0;
 
@@ -25,6 +25,7 @@ function computerPlay() {
 function playGame() {
     for (let i = 0; i < 5; i++) {
         let playerSelection = window.prompt("rock, paper, or scissors?");
+        let computerSelection = computerPlay();
     if(playerSelection != "rock"
     && playerSelection != "paper"
     && playerSelection != "scissors") {
