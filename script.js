@@ -22,6 +22,7 @@ function computerPlay() {
     }
 }
 
+/*  disabled game function
 function playGame() {
     for (let i = 0; i < 5; i++) {
         let playerSelection = window.prompt("rock, paper, or scissors?");
@@ -35,7 +36,9 @@ function playGame() {
     }
     }
     console.log(`FINAL SCORE: YOU: ${playerScore} COMPUTER: ${computerScore}`);
-}
+} 
+
+*/
 
 /* runs a round of the game */
 function playRound(playerSelection, computerSelection) {
