@@ -26,7 +26,7 @@ function playGame(playerInput) {
     if (playerInput == "rock") {
         playerSelection = "rock";
     } else if (playerInput == "paper") {
-        playerSelection = "paper;";
+        playerSelection = "paper";
     } else if (playerInput == "scissors") {
         playerSelection = "scissors";
     }
