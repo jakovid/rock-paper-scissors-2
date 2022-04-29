@@ -4,7 +4,7 @@ let computerSelection;
 let playerScore = 0;
 let computerScore = 0;
 const choices = ['rock', 'paper', 'scissors'];
-const rpsEmoji = {rock:'&#9994', paper:'&#9995', scissors:'&#9996'};
+const rpsEmoji = {rock:'&#9994', paper:'&#9995', scissors:'&#9996', reset:'&#10067'};
 
 /* event listeners */
 
@@ -23,7 +23,21 @@ function playGame(playerInput) {
     computerSelection = computerPlay();
     playRound(playerSelection, computerSelection);
     console.log(`You: ${playerScore} Computer: ${computerScore}`);
+    if(playerScore == 5) {
+        alert("You won!");
+        resetGame();
+    } else if(computerScore == 5) {
+        alert("You lost!");
+        resetGame();
+    }
     domUpdate();
+}
+
+function resetGame() {
+    playerScore = 0;
+    computerScore = 0;
+    playerSelection = 'reset';
+    computerSelection = 'reset';
 }
 
 function domUpdate() {
