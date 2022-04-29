@@ -43,17 +43,17 @@ function playRound(playerSelection, computerSelection) {
         console.log(`computer throws ${computerSelection}.`);
         console.log(`you win! ${playerSelection} beats ${computerSelection}!`);
         playerScore++;
-        console.log(`You: ${playerScore} Computer: ${computerScore}`);
     } else if(playerSelection == computerSelection) {
         console.log(`you throw ${playerSelection}.`);
         console.log(`computer throws ${computerSelection}.`);
         console.log('it is a tie!');
-        console.log(`You: ${playerScore} Computer: ${computerScore}`);
     } else {
         console.log(`you throw ${playerSelection}.`);
         console.log(`computer throws ${computerSelection}.`);
         console.log(`you lose! ${computerSelection} beats ${playerSelection}!`);
         computerScore++;
-        console.log(`You: ${playerScore} Computer: ${computerScore}`);
     }
+    console.log(`You: ${playerScore} Computer: ${computerScore}`);
+    document.getElementById("playerScore").innerHTML = `Player Score: ${playerScore}`;
+    document.getElementById("computerScore").innerHTML = `Computer Score: ${computerScore}`;
 }
