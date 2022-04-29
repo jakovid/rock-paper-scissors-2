@@ -23,11 +23,14 @@ function playGame(playerInput) {
     computerSelection = computerPlay();
     playRound(playerSelection, computerSelection);
     console.log(`You: ${playerScore} Computer: ${computerScore}`);
+    domUpdate();
+}
+
+function domUpdate() {
     document.getElementById("playerScore").innerHTML = `You: ${playerScore}`;
     document.getElementById("playerChoice").innerHTML = `${rpsEmoji[playerSelection]}`;
     document.getElementById("computerScore").innerHTML = `Computer: ${computerScore}`;
     document.getElementById("computerChoice").innerHTML = `${rpsEmoji[computerSelection]}`;
-
 }
 
 /* runs a round of the game*/
