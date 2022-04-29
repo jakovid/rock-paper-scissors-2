@@ -14,19 +14,19 @@
         <div class="game">
             <div class="gameZone">
                 <div class="playerGame">
-                    <div class="playerChoice">&#10067</div>
-                    <div id="playerScore"></div>
+                    <div id="playerChoice">&#10067</div>
+                    <div id="playerScore">You: </div>
                 </div>
                 <div class="computerGame">
-                    <div class="computerChoice">&#10067</div>
-                    <div id="computerScore"></div>
+                    <div id="computerChoice">&#10067</div>
+                    <div id="computerScore">Computer: 0</div>
                 </div>
             </div>
         </div>
         <div class="playerChoices">
-            <button name="playerButton" value="rock" onclick="playGame('rock')">&#9994</button>
-            <button name="playerButton" value="paper" onclick="playGame('paper')">&#9995</button>
-            <button name="playerButton" value="scissors" onclick="playGame('scissors')">&#9996</button>
+            <button name="playerButton" value="rock" onclick="playGame(0)">&#9994</button>
+            <button name="playerButton" value="paper" onclick="playGame(1)">&#9995</button>
+            <button name="playerButton" value="scissors" onclick="playGame(2)">&#9996</button>
         </div>
     </div>
 
