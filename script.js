@@ -33,6 +33,7 @@ function playGame(playerInput) {
     domUpdate();
 }
 
+/* this function resets the game upon completion */
 function resetGame() {
     playerScore = 0;
     computerScore = 0;
