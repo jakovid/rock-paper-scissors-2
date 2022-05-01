@@ -20,7 +20,14 @@
 
 .gameZone {
     display: grid;
+    grid-template-rows: 1fr 3fr;
     grid-template-columns: 50% 50%;
+}
+
+.results {
+    grid-column: span 2;
+    text-align: center;
+    font-size: x-large;
 }
 
 #playerChoice, #computerChoice {
